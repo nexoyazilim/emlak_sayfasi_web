@@ -1,0 +1,141 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "forSale": "Satılık Evler",
+    "forRent": "Kiralık Evler",
+    "plots": "Satılık Arsalar",
+    "about": "Hakkımızda",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "Hayalinizdeki Evi Bulun",
+    "subtitle": "Türkiye'nin en kapsamlı emlak platformu",
+    "searchPlaceholder": "Şehir, mahalle veya emlak türü arayın...",
+    "searchButton": "Ara"
+  },
+  "categories": {
+    "title": "Ne Arıyorsunuz?",
+    "subtitle": "Size uygun kategoriyi seçin ve aramaya başlayın",
+    "forSale": {
+      "title": "Satılık Evler",
+      "description": "Hayalinizdeki eve sahip olmaya hazır mısınız?",
+      "action": "Keşfet"
+    },
+    "forRent": {
+      "title": "Kiralık Evler", 
+      "description": "Yeni yuvanızı kiralamaya ne dersiniz?",
+      "action": "Keşfet"
+    },
+    "plots": {
+      "title": "Satılık Arsalar",
+      "description": "Yatırım için ideal arsa fırsatları",
+      "action": "Keşfet"
+    }
+  },
+  "featured": {
+    "title": "Öne Çıkan İlanlar",
+    "subtitle": "En çok beğenilen ve görüntülenen gayrimenkul ilanları",
+    "viewAll": "Tüm İlanları Görüntüle"
+  },
+  "stats": {
+    "activeListings": "Aktif İlan",
+    "happyCustomers": "Memnun Müşteri", 
+    "cityCount": "İl Kapsamı",
+    "support": "Müşteri Desteği"
+  },
+  "property": {
+    "bedrooms": "yatak odası",
+    "bathrooms": "banyo",
+    "area": "Alan",
+    "plotSize": "Arsa Alanı",
+    "sold": "Satıldı",
+    "rented": "Kiralandı",
+    "available": "Müsait",
+    "description": "Açıklama",
+    "features": "Özellikler",
+    "yearBuilt": "Yapım Yılı",
+    "heating": "Isıtma",
+    "parking": "Otopark",
+    "propertyId": "İlan No",
+    "propertyType": "İlan Türü",
+    "status": "Durum",
+    "forSaleType": "Satılık",
+    "forRentType": "Kiralık",
+    "plotType": "Arsa"
+  },
+  "listing": {
+    "resultsFound": "sonuç bulundu",
+    "noResults": "Arama kriterlerinize uygun ilan bulunamadı.",
+    "clearFilters": "Filtreleri temizle",
+    "filters": "Filtreler",
+    "priceRange": "Fiyat Aralığı",
+    "rentRange": "Kira Aralığı", 
+    "allPrices": "Tüm Fiyatlar",
+    "roomCount": "Oda Sayısı",
+    "allRooms": "Tümü",
+    "city": "Şehir",
+    "allCities": "Tüm Şehirler",
+    "sorting": "Sıralama",
+    "newest": "En Yeni",
+    "priceLowHigh": "Fiyat (Düşük-Yüksek)",
+    "priceHighLow": "Fiyat (Yüksek-Düşük)",
+    "rentLowHigh": "Kira (Düşük-Yüksek)",
+    "rentHighLow": "Kira (Yüksek-Düşük)",
+    "areaLargeSmall": "Alan (Büyük-Küçük)",
+    "searchPlaceholder": "Konum, mahalle veya emlak türü arayın..."
+  },
+  "contact": {
+    "title": "İletişim",
+    "subtitle": "Sorularınız mı var? Size yardımcı olmaktan memnuniyet duyarız.",
+    "contactInfo": "İletişim Bilgileri",
+    "address": "Adres",
+    "phoneNumbers": "Telefon Numaraları",
+    "emailAddresses": "E-posta Adresleri",
+    "workingHours": "Çalışma Saatleri",
+    "quickContact": "Hızlı İletişim",
+    "callNow": "Hemen Ara",
+    "sendEmail": "E-posta Gönder",
+    "socialMedia": "Sosyal Medya",
+    "followUs": "Bizi sosyal medyada takip edin:",
+    "workingDays": {
+      "weekdays": "Pazartesi - Cuma",
+      "saturday": "Cumartesi", 
+      "sunday": "Pazar",
+      "closed": "Kapalı"
+    },
+    "phoneTypes": {
+      "landline": "(Sabit Hat)",
+      "mobile": "(Mobil)"
+    },
+    "emailTypes": {
+      "general": "(Genel)",
+      "support": "(Destek)"
+    }
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "subtitle": "EmlakPlus olarak, 2010 yılından bu yana Türkiye'nin önde gelen emlak platformlarından biri olmaya devam ediyoruz. Hayalinizdeki evi bulmanızda ve emlak yatırımlarınızda güvenilir ortağınızız.",
+    "ourStory": "Hikayemiz",
+    "ourValues": "Değerlerimiz",
+    "ourTeam": "Ekibimiz",
+    "mission": "Misyonumuz",
+    "vision": "Vizyonumuz"
+  },
+  "footer": {
+    "companyDescription": "Türkiye'nin en güvenilir emlak platformu. Hayalinizdeki evi bulmak artık çok kolay.",
+    "quickLinks": "Hızlı Erişim",
+    "services": "Hizmetlerimiz",
+    "contact": "İletişim",
+    "allRightsReserved": "Tüm hakları saklıdır."
+  },
+  "language": {
+    "turkish": "Türkçe",
+    "english": "English"
+  },
+  "common": {
+    "backToHome": "Ana sayfaya dön",
+    "goBack": "Geri dön",
+    "notFound": "İlan bulunamadı",
+    "loading": "Yükleniyor..."
+  }
+}

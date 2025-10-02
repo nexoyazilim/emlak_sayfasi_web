@@ -1,0 +1,141 @@
+{
+  "nav": {
+    "home": "Home",
+    "forSale": "For Sale",
+    "forRent": "For Rent", 
+    "plots": "Land for Sale",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Find Your Dream Home",
+    "subtitle": "Turkey's most comprehensive real estate platform",
+    "searchPlaceholder": "Search city, district or property type...",
+    "searchButton": "Search"
+  },
+  "categories": {
+    "title": "What Are You Looking For?",
+    "subtitle": "Choose the right category for you and start searching",
+    "forSale": {
+      "title": "Houses for Sale",
+      "description": "Ready to own your dream home?",
+      "action": "Explore"
+    },
+    "forRent": {
+      "title": "Houses for Rent",
+      "description": "How about renting your new home?",
+      "action": "Explore"
+    },
+    "plots": {
+      "title": "Land for Sale",
+      "description": "Ideal land opportunities for investment",
+      "action": "Explore"
+    }
+  },
+  "featured": {
+    "title": "Featured Listings",
+    "subtitle": "Most liked and viewed real estate listings",
+    "viewAll": "View All Listings"
+  },
+  "stats": {
+    "activeListings": "Active Listings",
+    "happyCustomers": "Happy Customers",
+    "cityCount": "City Coverage", 
+    "support": "Customer Support"
+  },
+  "property": {
+    "bedrooms": "bedrooms",
+    "bathrooms": "bathrooms",
+    "area": "Area",
+    "plotSize": "Plot Size",
+    "sold": "Sold",
+    "rented": "Rented",
+    "available": "Available",
+    "description": "Description",
+    "features": "Features",
+    "yearBuilt": "Year Built",
+    "heating": "Heating",
+    "parking": "Parking",
+    "propertyId": "Property ID",
+    "propertyType": "Property Type",
+    "status": "Status",
+    "forSaleType": "For Sale",
+    "forRentType": "For Rent",
+    "plotType": "Land"
+  },
+  "listing": {
+    "resultsFound": "results found",
+    "noResults": "No properties found matching your criteria.",
+    "clearFilters": "Clear filters",
+    "filters": "Filters",
+    "priceRange": "Price Range",
+    "rentRange": "Rent Range",
+    "allPrices": "All Prices",
+    "roomCount": "Room Count",
+    "allRooms": "All",
+    "city": "City",
+    "allCities": "All Cities",
+    "sorting": "Sorting",
+    "newest": "Newest",
+    "priceLowHigh": "Price (Low-High)",
+    "priceHighLow": "Price (High-Low)",
+    "rentLowHigh": "Rent (Low-High)",
+    "rentHighLow": "Rent (High-Low)",
+    "areaLargeSmall": "Area (Large-Small)",
+    "searchPlaceholder": "Search location, district or property type..."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have questions? We'd be happy to help you.",
+    "contactInfo": "Contact Information",
+    "address": "Address",
+    "phoneNumbers": "Phone Numbers",
+    "emailAddresses": "Email Addresses",
+    "workingHours": "Working Hours",
+    "quickContact": "Quick Contact",
+    "callNow": "Call Now",
+    "sendEmail": "Send Email",
+    "socialMedia": "Social Media",
+    "followUs": "Follow us on social media:",
+    "workingDays": {
+      "weekdays": "Monday - Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "closed": "Closed"
+    },
+    "phoneTypes": {
+      "landline": "(Landline)",
+      "mobile": "(Mobile)"
+    },
+    "emailTypes": {
+      "general": "(General)",
+      "support": "(Support)"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "As EmlakPlus, we continue to be one of Turkey's leading real estate platforms since 2010. We are your reliable partner in finding your dream home and real estate investments.",
+    "ourStory": "Our Story",
+    "ourValues": "Our Values",
+    "ourTeam": "Our Team",
+    "mission": "Our Mission",
+    "vision": "Our Vision"
+  },
+  "footer": {
+    "companyDescription": "Turkey's most reliable real estate platform. Finding your dream home is now very easy.",
+    "quickLinks": "Quick Links",
+    "services": "Our Services",
+    "contact": "Contact",
+    "allRightsReserved": "All rights reserved."
+  },
+  "language": {
+    "turkish": "Türkçe",
+    "english": "English"
+  },
+  "common": {
+    "backToHome": "Back to home",
+    "goBack": "Go back",
+    "notFound": "Property not found",
+    "loading": "Loading..."
+  }
+}

@@ -7,4 +7,6 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+  // Base path for GitHub Pages: replace with your repo name if different
+  base: '/emlak_sitesi/',
 });

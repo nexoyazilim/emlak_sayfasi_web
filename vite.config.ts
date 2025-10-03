@@ -9,4 +9,12 @@ export default defineConfig({
   },
   // Base path for GitHub Pages: replace with your repo name if different
   base: '/emlak_sitesi/',
+  build: {
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name].[ext]'
+      }
+    }
+  }
 });

@@ -8,5 +8,5 @@ export default defineConfig({
     exclude: ['lucide-react'],
   },
   // Base path for GitHub Pages: replace with your repo name if different
-  base: '/emlak_sayfasi_web/',
+  base: './',
 });

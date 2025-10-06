@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
 import { useLanguage } from '../contexts/LanguageContext';
-import logo from '../assets/logo.png';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,7 +25,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 transition-all duration-300 hover:scale-105 group">
-            <img src={logo} alt="EmlakPlus Logo" className="h-12 w-auto group-hover:animate-pulse" />
+            <img src="/logo.png" alt="EmlakPlus Logo" className="h-12 w-auto group-hover:animate-pulse" />
             <div className="flex flex-col">
               <span className="text-xl font-bold text-blue-600">EMLAK</span>
               <span className="text-lg font-semibold text-yellow-500">PLUS</span>

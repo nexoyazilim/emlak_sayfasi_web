@@ -56,7 +56,7 @@ export default function ForSaleProperties() {
         case '3+1':
           return property.bedrooms === 4;
         case '4+':
-          return property.bedrooms >= 5;
+          return property.bedrooms ? property.bedrooms >= 5 : false;
         default:
           return true;
       }

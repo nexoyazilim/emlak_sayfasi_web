@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Home, Menu, X } from 'lucide-react';
+import { Home, Menu, X, Sun, Moon } from 'lucide-react';
+import { useTheme } from '../contexts/ThemeContext';
 import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
   const { t } = useLanguage();
+  const { theme, toggleTheme } = useTheme();
 
   const navigation = [
     { name: t('nav.home'), href: '/', key: '/' },
@@ -22,9 +24,12 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 text-blue-600 hover:text-blue-700 transition-all duration-300 hover:scale-105 group">
-            <Home size={28} className="group-hover:animate-wiggle" />
-            <span className="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">EmlakPlus</span>
+          <Link to="/" className="flex items-center space-x-3 transition-all duration-300 hover:scale-105 group">
+            <img src="/logo.png" alt="EmlakPlus Logo" className="h-12 w-auto group-hover:animate-pulse" />
+            <div className="flex flex-col">
+              <span className="text-xl font-bold text-blue-600">EMLAK</span>
+              <span className="text-lg font-semibold text-yellow-500">PLUS</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -45,13 +50,22 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Mobile menu button */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 text-gray-600 hover:text-blue-600 transition-all duration-300 hover:scale-110 hover:rotate-90"
-          >
-            {isMenuOpen ? <X size={24} className="animate-wiggle" /> : <Menu size={24} className="hover:animate-bounce-subtle" />}
-          </button>
+          {/* Theme toggle and mobile menu buttons */}
+          <div className="flex items-center space-x-4">
+            <button
+              onClick={toggleTheme}
+              className="p-2 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 hover:scale-110"
+              title={theme === 'light' ? t('nav.darkMode') : t('nav.lightMode')}
+            >
+              {theme === 'light' ? <Moon size={24} className="hover:animate-pulse" /> : <Sun size={24} className="hover:animate-spin-slow" />}
+            </button>
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="lg:hidden p-2 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 hover:scale-110 hover:rotate-90"
+            >
+              {isMenuOpen ? <X size={24} className="animate-wiggle" /> : <Menu size={24} className="hover:animate-bounce-subtle" />}
+            </button>
+          </div>
         </div>
       </div>
 

@@ -4,15 +4,25 @@ import { useLanguage } from '../contexts/LanguageContext';
 
 interface Property {
   id: string;
-  title: string;
+  title: {
+    tr: string;
+    en: string;
+  };
   price: string;
-  location: string;
+  location: {
+    tr: string;
+    en: string;
+  };
   image: string;
   bedrooms?: number;
   bathrooms?: number;
   area?: string;
   status?: 'available' | 'sold' | 'rented';
-  type?: 'sale' | 'rent';
+  type?: 'sale' | 'rent' | 'plot';
+  description: {
+    tr: string;
+    en: string;
+  };
 }
 
 interface PropertyCardProps {
@@ -20,7 +30,7 @@ interface PropertyCardProps {
 }
 
 export default function PropertyCard({ property }: PropertyCardProps) {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const getStatusBadge = () => {
     if (property.status === 'sold') {
       return (
@@ -49,7 +59,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
         <div className="relative">
           <img
             src={property.image}
-            alt={property.title}
+            alt={property.title[language]}
             className={`w-full h-40 sm:h-48 object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110 ${
               isUnavailable ? 'grayscale' : ''
             }`}
@@ -62,12 +72,13 @@ export default function PropertyCard({ property }: PropertyCardProps) {
             <h3 className={`font-semibold text-base sm:text-lg transition-colors line-clamp-2 ${
               isUnavailable ? 'text-gray-500' : 'text-gray-800 group-hover:text-blue-600'
             }`}>
-              {property.title}
+              {property.title[language]}
             </h3>
             <div className="flex items-center text-gray-600 text-xs sm:text-sm mt-1">
               <MapPin size={12} className="mr-1 flex-shrink-0" />
-              <span className="truncate">{property.location}</span>
+              <span className="truncate">{property.location[language]}</span>
             </div>
+            <p className="text-gray-600 text-sm mt-2 line-clamp-2">{property.description[language]}</p>
           </div>
 
           <div className={`text-xl sm:text-2xl font-bold transition-all duration-300 group-hover:scale-105 ${

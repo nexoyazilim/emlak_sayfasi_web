@@ -1,5 +1,24 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { LanguageProvider } from './contexts/LanguageContext';
+import { ThemeProvider } from './contexts/ThemeContext';
+import { useEffect } from 'react';
+
+function ScrollToTop() {
+  const location = useLocation();
+  
+  useEffect(() => {
+    window.history.scrollRestoration = 'manual';
+  }, []);
+
+  useEffect(() => {
+    // Only scroll to top if the pathname changes
+    if (location.hash === '') {
+      window.scrollTo(0, 0);
+    }
+  }, [location.pathname]);
+
+  return null;
+}
 import Header from './components/Header';
 import Footer from './components/Footer';
 import LanguageSwitcher from './components/LanguageSwitcher';
@@ -14,8 +33,10 @@ import ContactPage from './pages/ContactPage';
 function App() {
   return (
     <LanguageProvider>
-      <Router>
-        <div className="min-h-screen bg-gray-50 flex flex-col">
+      <ThemeProvider>
+        <Router>
+        <ScrollToTop />
+        <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col transition-colors duration-300">
           <Header />
           <main className="flex-grow">
             <Routes>
@@ -32,6 +53,7 @@ function App() {
           <LanguageSwitcher />
         </div>
       </Router>
+      </ThemeProvider>
     </LanguageProvider>
   );
 }

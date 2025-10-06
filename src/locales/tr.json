@@ -5,7 +5,9 @@
     "forRent": "Kiralık Evler",
     "plots": "Satılık Arsalar",
     "about": "Hakkımızda",
-    "contact": "İletişim"
+    "contact": "İletişim",
+    "darkMode": "Koyu Temaya Geç",
+    "lightMode": "Açık Temaya Geç"
   },
   "hero": {
     "title": "Hayalinizdeki Evi Bulun",
@@ -71,6 +73,8 @@
     "priceRange": "Fiyat Aralığı",
     "rentRange": "Kira Aralığı", 
     "allPrices": "Tüm Fiyatlar",
+    "allSizes": "Tüm Alanlar",
+    "plotSize": "Arsa Alanı",
     "roomCount": "Oda Sayısı",
     "allRooms": "Tümü",
     "city": "Şehir",
@@ -132,10 +136,38 @@
     "turkish": "Türkçe",
     "english": "English"
   },
+  "cities": {
+    "istanbul": "İstanbul",
+    "ankara": "Ankara",
+    "izmir": "İzmir",
+    "antalya": "Antalya"
+  },
   "common": {
     "backToHome": "Ana sayfaya dön",
     "goBack": "Geri dön",
     "notFound": "İlan bulunamadı",
     "loading": "Yükleniyor..."
+  },
+  "whyChooseUs": {
+    "title": "Neden Bizi Seçmelisiniz",
+    "subtitle": "Profesyonel ekibimiz ve yenilikçi çözümlerimizle en iyi gayrimenkul deneyimini sunuyoruz",
+    "trust": {
+      "title": "Güvenilir Ortak",
+      "description": "Yılların deneyimi ve binlerce memnun müşteriyle gayrimenkul konusunda güvenilir ortağınızız"
+    },
+    "speed": {
+      "title": "Hızlı Süreç",
+      "description": "Profesyonel ekibimizle tüm gayrimenkul işlemlerini hızlı ve verimli bir şekilde tamamlıyoruz"
+    },
+    "support": {
+      "title": "7/24 Destek",
+      "description": "Destek ekibimiz her türlü soru ve sorununuz için her zaman yardıma hazır"
+    }
+  },
+  "cta": {
+    "title": "Hayalinizdeki Evi Bulmaya Hazır mısınız?",
+    "description": "Geniş ilan portföyümüzü inceleyin veya size en uygun mülkü bulmanıza yardımcı olmamız için bizimle iletişime geçin",
+    "browseProperties": "İlanları İncele",
+    "contactUs": "Bize Ulaşın"
   }
 }

@@ -5,7 +5,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 
 export default function PropertyDetails() {
   const { id } = useParams<{ id: string }>();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const property = getPropertyById(id || '');
 
   if (!property) {
@@ -59,7 +59,7 @@ export default function PropertyDetails() {
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-6">
             {/* Image Gallery */}
-            <div className="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm overflow-hidden">
               <div className="relative">
                 <img
                   src={property.image}
@@ -95,13 +95,13 @@ export default function PropertyDetails() {
             </div>
 
             {/* Property Info */}
-            <div className="bg-white rounded-lg shadow-sm p-6">
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6">
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-6">
                 <div>
-                  <h1 className="text-3xl font-bold text-gray-800 mb-2">{property.title}</h1>
-                  <div className="flex items-center text-gray-600 mb-4">
+                  <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-2">{property.title[language]}</h1>
+                  <div className="flex items-center text-gray-600 dark:text-gray-300 mb-4">
                     <MapPin size={18} className="mr-2" />
-                    {property.location}
+                    {property.location[language]}
                   </div>
                 </div>
                 <div className="text-right">
@@ -114,13 +114,13 @@ export default function PropertyDetails() {
 
               {/* Property Features Grid */}
               {(property.bedrooms || property.bathrooms || property.area) && (
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6 p-4 bg-gray-50 rounded-lg">
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
                   {property.bedrooms && (
                     <div className="flex items-center space-x-2">
                       <Bed size={20} className="text-gray-600" />
                       <div>
                         <div className="font-semibold">{property.bedrooms}</div>
-                        <div className="text-sm text-gray-600">Yatak Odası</div>
+                        <div className="text-sm text-gray-600 dark:text-gray-300">Yatak Odası</div>
                       </div>
                     </div>
                   )}
@@ -129,7 +129,7 @@ export default function PropertyDetails() {
                       <Bath size={20} className="text-gray-600" />
                       <div>
                         <div className="font-semibold">{property.bathrooms}</div>
-                        <div className="text-sm text-gray-600">Banyo</div>
+                        <div className="text-sm text-gray-600 dark:text-gray-300">Banyo</div>
                       </div>
                     </div>
                   )}
@@ -138,7 +138,7 @@ export default function PropertyDetails() {
                       <Square size={20} className="text-gray-600" />
                       <div>
                         <div className="font-semibold">{property.area}</div>
-                        <div className="text-sm text-gray-600">Alan</div>
+                        <div className="text-sm text-gray-600 dark:text-gray-300">Alan</div>
                       </div>
                     </div>
                   )}
@@ -147,7 +147,7 @@ export default function PropertyDetails() {
                       <Square size={20} className="text-gray-600" />
                       <div>
                         <div className="font-semibold">{property.plotSize}</div>
-                        <div className="text-sm text-gray-600">Arsa Alanı</div>
+                        <div className="text-sm text-gray-600 dark:text-gray-300">Arsa Alanı</div>
                       </div>
                     </div>
                   )}
@@ -156,19 +156,19 @@ export default function PropertyDetails() {
 
               {/* Description */}
               <div className="mb-6">
-                <h2 className="text-xl font-bold text-gray-800 mb-3">Açıklama</h2>
-                <p className="text-gray-600 leading-relaxed">{property.description}</p>
+                <h2 className="text-xl font-bold text-gray-800 dark:text-white mb-3">Açıklama</h2>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{property.description[language]}</p>
               </div>
 
               {/* Features */}
               {property.features && property.features.length > 0 && (
                 <div className="mb-6">
-                  <h2 className="text-xl font-bold text-gray-800 mb-3">Özellikler</h2>
+                  <h2 className="text-xl font-bold text-gray-800 dark:text-white mb-3">Özellikler</h2>
                   <div className="grid sm:grid-cols-2 gap-2">
-                    {property.features.map((feature, index) => (
+                    {property.features[language].map((feature, index) => (
                       <div key={index} className="flex items-center space-x-2">
                         <Star size={16} className="text-blue-600" />
-                        <span className="text-gray-700">{feature}</span>
+                        <span className="text-gray-700 dark:text-gray-300">{feature}</span>
                       </div>
                     ))}
                   </div>
@@ -191,7 +191,7 @@ export default function PropertyDetails() {
                     <Thermometer size={18} className="text-gray-600" />
                     <div>
                       <span className="text-sm text-gray-600">Isıtma: </span>
-                      <span className="font-semibold">{property.heating}</span>
+                      <span className="font-semibold">{property.heating[language]}</span>
                     </div>
                   </div>
                 )}
@@ -200,7 +200,7 @@ export default function PropertyDetails() {
                     <Car size={18} className="text-gray-600" />
                     <div>
                       <span className="text-sm text-gray-600">Otopark: </span>
-                      <span className="font-semibold">{property.parking}</span>
+                      <span className="font-semibold">{property.parking[language]}</span>
                     </div>
                   </div>
                 )}
@@ -211,8 +211,8 @@ export default function PropertyDetails() {
           {/* Sidebar */}
           <div className="space-y-6">
             {/* Contact Card */}
-            <div className="bg-white rounded-lg shadow-sm p-6">
-              <h3 className="text-lg font-bold text-gray-800 mb-4">İletişim</h3>
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6">
+              <h3 className="text-lg font-bold text-gray-800 dark:text-white mb-4">İletişim</h3>
               <div className="space-y-4">
                 <div className="text-center">
                   <img
@@ -220,8 +220,8 @@ export default function PropertyDetails() {
                     alt="Emlak Danışmanı"
                     className="w-16 h-16 rounded-full mx-auto mb-2"
                   />
-                  <div className="font-semibold text-gray-800">Mehmet Öz</div>
-                  <div className="text-sm text-gray-600">Emlak Danışmanı</div>
+                  <div className="font-semibold text-gray-800 dark:text-white">Mehmet Öz</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-300">Emlak Danışmanı</div>
                 </div>
                 
                 <div className="space-y-2">
@@ -244,22 +244,22 @@ export default function PropertyDetails() {
             </div>
 
             {/* Quick Info */}
-            <div className="bg-blue-50 rounded-lg p-6">
-              <h3 className="text-lg font-bold text-gray-800 mb-4">Hızlı Bilgi</h3>
+            <div className="bg-blue-50 dark:bg-blue-900/30 rounded-lg p-6">
+              <h3 className="text-lg font-bold text-gray-800 dark:text-white mb-4">Hızlı Bilgi</h3>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
-                  <span className="text-gray-600">İlan No:</span>
-                  <span className="font-semibold">{property.id.padStart(6, '0')}</span>
+                  <span className="text-gray-600 dark:text-gray-300">İlan No:</span>
+                  <span className="font-semibold dark:text-white">{property.id.padStart(6, '0')}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-600">İlan Türü:</span>
-                  <span className="font-semibold">
+                  <span className="text-gray-600 dark:text-gray-300">İlan Türü:</span>
+                  <span className="font-semibold dark:text-white">
                     {property.type === 'sale' ? 'Satılık' : property.type === 'rent' ? 'Kiralık' : 'Arsa'}
                   </span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-600">Durum:</span>
-                  <span className="font-semibold">
+                  <span className="text-gray-600 dark:text-gray-300">Durum:</span>
+                  <span className="font-semibold dark:text-white">
                     {property.status === 'available' ? 'Müsait' : property.status === 'sold' ? 'Satıldı' : 'Kiralandı'}
                   </span>
                 </div>

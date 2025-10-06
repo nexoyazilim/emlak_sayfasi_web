@@ -5,7 +5,9 @@
     "forRent": "For Rent", 
     "plots": "Land for Sale",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "darkMode": "Switch to Dark Mode",
+    "lightMode": "Switch to Light Mode"
   },
   "hero": {
     "title": "Find Your Dream Home",
@@ -71,6 +73,8 @@
     "priceRange": "Price Range",
     "rentRange": "Rent Range",
     "allPrices": "All Prices",
+    "allSizes": "All Sizes",
+    "plotSize": "Plot Size",
     "roomCount": "Room Count",
     "allRooms": "All",
     "city": "City",
@@ -132,10 +136,38 @@
     "turkish": "Türkçe",
     "english": "English"
   },
+  "cities": {
+    "istanbul": "Istanbul",
+    "ankara": "Ankara",
+    "izmir": "Izmir",
+    "antalya": "Antalya"
+  },
   "common": {
     "backToHome": "Back to home",
     "goBack": "Go back",
     "notFound": "Property not found",
     "loading": "Loading..."
+  },
+  "whyChooseUs": {
+    "title": "Why Choose Us",
+    "subtitle": "We provide the best real estate experience with our professional team and innovative solutions",
+    "trust": {
+      "title": "Trusted Partner",
+      "description": "With years of experience and thousands of satisfied customers, we are your trusted partner in real estate"
+    },
+    "speed": {
+      "title": "Fast Process",
+      "description": "We complete all real estate transactions quickly and efficiently with our professional team"
+    },
+    "support": {
+      "title": "24/7 Support",
+      "description": "Our support team is always ready to help you with any questions or problems"
+    }
+  },
+  "cta": {
+    "title": "Ready to Find Your Dream Home?",
+    "description": "Browse our extensive property listings or contact us to help you find the perfect property",
+    "browseProperties": "Browse Properties",
+    "contactUs": "Contact Us"
   }
 }

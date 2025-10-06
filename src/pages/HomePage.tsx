@@ -45,7 +45,7 @@ export default function HomePage() {
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder={t('hero.searchPlaceholder')}
-                className="w-full pl-10 pr-4 py-3 text-gray-800 rounded-lg focus:ring-2 focus:ring-blue-300 focus:outline-none text-sm sm:text-base transition-all duration-300 focus:scale-105"
+                className="w-full pl-10 pr-4 py-3 text-gray-800 dark:text-white bg-white dark:bg-gray-700 rounded-lg focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-500 focus:outline-none text-sm sm:text-base transition-all duration-300 focus:scale-105"
               />
             </div>
             <button 
@@ -59,11 +59,11 @@ export default function HomePage() {
       </section>
 
       {/* Quick Links */}
-      <section className="py-12 sm:py-16 bg-white">
+      <section className="py-12 sm:py-16 bg-white dark:bg-gray-800 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-3 sm:mb-4">{t('categories.title')}</h2>
-            <p className="text-gray-600 text-base sm:text-lg">{t('categories.subtitle')}</p>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 dark:text-white mb-3 sm:mb-4">{t('categories.title')}</h2>
+            <p className="text-gray-600 dark:text-gray-300 text-base sm:text-lg">{t('categories.subtitle')}</p>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
@@ -104,11 +104,11 @@ export default function HomePage() {
       </section>
 
       {/* Featured Properties */}
-      <section className="py-12 sm:py-16 bg-gray-50">
+      <section className="py-12 sm:py-16 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-3 sm:mb-4">{t('featured.title')}</h2>
-            <p className="text-gray-600 text-base sm:text-lg">{t('featured.subtitle')}</p>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 dark:text-white mb-3 sm:mb-4">{t('featured.title')}</h2>
+            <p className="text-gray-600 dark:text-gray-300 text-base sm:text-lg">{t('featured.subtitle')}</p>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
@@ -151,6 +151,72 @@ export default function HomePage() {
               <div className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2 animate-float" style={{animationDelay: '3s'}}>24/7</div>
               <div className="text-blue-100 text-sm sm:text-base">{t('stats.support')}</div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="py-12 sm:py-16 bg-white dark:bg-gray-800 transition-colors duration-300">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 dark:text-white mb-4">{t('whyChooseUs.title')}</h2>
+            <p className="text-gray-600 dark:text-gray-300 text-lg max-w-3xl mx-auto">{t('whyChooseUs.subtitle')}</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white dark:bg-gray-700 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">{t('whyChooseUs.trust.title')}</h3>
+              <p className="text-gray-600 dark:text-gray-300">{t('whyChooseUs.trust.description')}</p>
+            </div>
+
+            <div className="bg-white dark:bg-gray-700 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <div className="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">{t('whyChooseUs.speed.title')}</h3>
+              <p className="text-gray-600 dark:text-gray-300">{t('whyChooseUs.speed.description')}</p>
+            </div>
+
+            <div className="bg-white dark:bg-gray-700 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <div className="w-16 h-16 bg-orange-100 dark:bg-orange-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-orange-600 dark:text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">{t('whyChooseUs.support.title')}</h3>
+              <p className="text-gray-600 dark:text-gray-300">{t('whyChooseUs.support.description')}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action Section */}
+      <section className="py-12 sm:py-16 bg-gray-900 text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 opacity-90"></div>
+        <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">{t('cta.title')}</h2>
+          <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">{t('cta.description')}</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              to="/satilik-evler"
+              className="inline-flex items-center justify-center px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-600 transition-all duration-300"
+            >
+              {t('cta.browseProperties')}
+            </Link>
+            <Link
+              to="/iletisim"
+              className="inline-flex items-center justify-center px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300"
+            >
+              {t('cta.contactUs')}
+            </Link>
           </div>
         </div>
       </section>

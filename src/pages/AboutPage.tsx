@@ -38,7 +38,7 @@ export default function AboutPage() {
     {
       name: 'Fatma Kaya',
       role: 'Satış Müdürü',
-      image: 'https://images.pexels.com/photos/3760091/pexels-photo-3760091.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
+      image: '/public/images/fatma_kaya.png',
       description: 'Müşteri memnuniyeti uzmanı',
     },
     {

@@ -318,7 +318,7 @@ export const properties: Property[] = [
       tr: 'Sakarya, Sapanca',
       en: 'Sakarya, Sapanca'
     },
-    image: 'https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/public/images/köyde_bahce.png',
     area: '2500 m²',
     status: 'sold',
     type: 'plot',
@@ -384,7 +384,7 @@ export const properties: Property[] = [
       tr: 'İstanbul, Beşiktaş',
       en: 'Istanbul, Besiktas'
     },
-    image: 'https://images.pexels.com/photos/2080018/pexels-photo-2080018.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/public/images/beşiktaş_merkez.png',
     bedrooms: 2,
     bathrooms: 1,
     area: '90 m²',
@@ -454,7 +454,7 @@ export const properties: Property[] = [
       tr: 'İstanbul, Ataşehir',
       en: 'Istanbul, Atasehir'
     },
-    image: 'https://images.pexels.com/photos/1832323/pexels-photo-1832323.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/public/images/ataşehir_dublex.png',
     bedrooms: 4,
     bathrooms: 3,
     area: '180 m²',
@@ -633,7 +633,7 @@ export const properties: Property[] = [
       tr: 'İstanbul, Çekmeköy',
       en: 'Istanbul, Cekmekoy'
     },
-    image: 'https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/public/images/cekmekoy_yatirim_arsa.png',
     area: '600 m²',
     status: 'available',
     type: 'plot',
@@ -658,7 +658,7 @@ export const properties: Property[] = [
       tr: 'İstanbul, Şile',
       en: 'Istanbul, Sile'
     },
-    image: 'https://images.pexels.com/photos/2382894/pexels-photo-2382894.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/public/images/sile_orman_kenari.png',
     area: '1200 m²',
     status: 'available',
     type: 'plot',
@@ -683,7 +683,7 @@ export const properties: Property[] = [
       tr: 'İstanbul, Büyükçekmece',
       en: 'Istanbul, Buyukcekmece'
     },
-    image: 'https://images.pexels.com/photos/2635011/pexels-photo-2635011.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/public/images/buyukcekmece_gol_kenari.png',
     area: '1500 m²',
     status: 'sold',
     type: 'plot',

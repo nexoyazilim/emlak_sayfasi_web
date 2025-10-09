@@ -1,6 +1,5 @@
 import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { LanguageProvider } from './contexts/LanguageContext';
-import { ThemeProvider } from './contexts/ThemeContext';
 import { useEffect } from 'react';
 
 function ScrollToTop() {
@@ -33,10 +32,9 @@ import ContactPage from './pages/ContactPage';
 function App() {
   return (
     <LanguageProvider>
-      <ThemeProvider>
         <Router>
         <ScrollToTop />
-        <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col transition-colors duration-300">
+        <div className="min-h-screen bg-gray-900 flex flex-col">
           <Header />
           <main className="flex-grow">
             <Routes>
@@ -53,7 +51,6 @@ function App() {
           <LanguageSwitcher />
         </div>
       </Router>
-      </ThemeProvider>
     </LanguageProvider>
   );
 }

@@ -63,7 +63,7 @@ export default function PropertyDetails() {
               <div className="relative">
                 <img
                   src={property.image}
-                  alt={property.title}
+                  alt={property.title[language]}
                   className="w-full h-96 object-cover"
                 />
                 {property.status !== 'available' && (
@@ -161,7 +161,7 @@ export default function PropertyDetails() {
               </div>
 
               {/* Features */}
-              {property.features && property.features.length > 0 && (
+              {property.features && property.features[language].length > 0 && (
                 <div className="mb-6">
                   <h2 className="text-xl font-bold text-gray-800 dark:text-white mb-3">Özellikler</h2>
                   <div className="grid sm:grid-cols-2 gap-2">

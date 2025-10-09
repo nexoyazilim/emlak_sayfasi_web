@@ -45,7 +45,7 @@ export default function HomePage() {
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder={t('hero.searchPlaceholder')}
-                className="w-full pl-10 pr-4 py-3 text-gray-800 dark:text-white bg-white dark:bg-gray-700 rounded-lg focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-500 focus:outline-none text-sm sm:text-base transition-all duration-300 focus:scale-105"
+                className="w-full pl-10 pr-4 py-3 text-white bg-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none text-sm sm:text-base transition-all duration-300 focus:scale-105"
               />
             </div>
             <button 
@@ -62,8 +62,8 @@ export default function HomePage() {
       <section className="py-12 sm:py-16 bg-white dark:bg-gray-800 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 dark:text-white mb-3 sm:mb-4">{t('categories.title')}</h2>
-            <p className="text-gray-600 dark:text-gray-300 text-base sm:text-lg">{t('categories.subtitle')}</p>
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4">{t('categories.title')}</h2>
+            <p className="text-gray-300 text-base sm:text-lg">{t('categories.subtitle')}</p>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
@@ -104,11 +104,11 @@ export default function HomePage() {
       </section>
 
       {/* Featured Properties */}
-      <section className="py-12 sm:py-16 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+      <section className="py-12 sm:py-16 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 dark:text-white mb-3 sm:mb-4">{t('featured.title')}</h2>
-            <p className="text-gray-600 dark:text-gray-300 text-base sm:text-lg">{t('featured.subtitle')}</p>
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4">{t('featured.title')}</h2>
+            <p className="text-gray-300 text-base sm:text-lg">{t('featured.subtitle')}</p>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
@@ -156,42 +156,42 @@ export default function HomePage() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-12 sm:py-16 bg-white dark:bg-gray-800 transition-colors duration-300">
+      <section className="py-12 sm:py-16 bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 dark:text-white mb-4">{t('whyChooseUs.title')}</h2>
-            <p className="text-gray-600 dark:text-gray-300 text-lg max-w-3xl mx-auto">{t('whyChooseUs.subtitle')}</p>
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">{t('whyChooseUs.title')}</h2>
+            <p className="text-gray-300 text-lg max-w-3xl mx-auto">{t('whyChooseUs.subtitle')}</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white dark:bg-gray-700 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="bg-gray-700 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <div className="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">{t('whyChooseUs.trust.title')}</h3>
-              <p className="text-gray-600 dark:text-gray-300">{t('whyChooseUs.trust.description')}</p>
+              <h3 className="text-xl font-semibold mb-2 text-white">{t('whyChooseUs.trust.title')}</h3>
+              <p className="text-gray-300">{t('whyChooseUs.trust.description')}</p>
             </div>
 
-            <div className="bg-white dark:bg-gray-700 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+            <div className="bg-gray-700 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <div className="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">{t('whyChooseUs.speed.title')}</h3>
-              <p className="text-gray-600 dark:text-gray-300">{t('whyChooseUs.speed.description')}</p>
+              <h3 className="text-xl font-semibold mb-2 text-white">{t('whyChooseUs.speed.title')}</h3>
+              <p className="text-gray-300">{t('whyChooseUs.speed.description')}</p>
             </div>
 
-            <div className="bg-white dark:bg-gray-700 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+            <div className="bg-gray-700 rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <div className="w-16 h-16 bg-orange-100 dark:bg-orange-900 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-orange-600 dark:text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">{t('whyChooseUs.support.title')}</h3>
-              <p className="text-gray-600 dark:text-gray-300">{t('whyChooseUs.support.description')}</p>
+              <h3 className="text-xl font-semibold mb-2 text-white">{t('whyChooseUs.support.title')}</h3>
+              <p className="text-gray-300">{t('whyChooseUs.support.description')}</p>
             </div>
           </div>
         </div>

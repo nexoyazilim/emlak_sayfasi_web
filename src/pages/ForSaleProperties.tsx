@@ -88,13 +88,13 @@ export default function ForSaleProperties() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">{t('nav.forSale')}</h1>
-          <p className="text-gray-600 dark:text-gray-300">{t('categories.forSale.description')}</p>
+          <h1 className="text-3xl font-bold text-white mb-4">{t('nav.forSale')}</h1>
+          <p className="text-gray-300">{t('categories.forSale.description')}</p>
         </div>
 
         {/* Results Count */}
         <div className="mb-6">
-          <p className="text-gray-600 dark:text-gray-300">
+          <p className="text-gray-300">
             <span className="font-semibold">{filteredProperties.length}</span> {t('listing.resultsFound')}
           </p>
         </div>
@@ -245,7 +245,7 @@ export default function ForSaleProperties() {
 
         {filteredProperties.length === 0 && (
           <div className="text-center py-12">
-            <p className="text-gray-500 text-lg">{t('listing.noResults')}</p>
+            <p className="text-gray-300 text-lg">{t('listing.noResults')}</p>
             <button
               onClick={() => {
                 setSearchTerm('');
@@ -256,7 +256,7 @@ export default function ForSaleProperties() {
                 setSelectedFeatures([]);
                 setSorting('newest');
               }}
-              className="mt-4 text-blue-600 hover:text-blue-700 font-medium"
+              className="mt-4 text-blue-400 hover:text-blue-300 font-medium"
             >
               {t('listing.clearFilters')}
             </button>

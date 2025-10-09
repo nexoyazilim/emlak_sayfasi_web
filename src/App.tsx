@@ -34,7 +34,7 @@ function App() {
     <LanguageProvider>
         <Router>
         <ScrollToTop />
-        <div className="min-h-screen bg-gray-900 flex flex-col">
+        <div className="min-h-screen bg-gray-900 flex flex-col text-gray-100">
           <Header />
           <main className="flex-grow">
             <Routes>

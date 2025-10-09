@@ -53,7 +53,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
 
   return (
     <Link to={`/ilan/${property.id}`} className="group block animate-slide-up hover-lift">
-      <div className={`bg-white rounded-lg shadow-md overflow-hidden transition-all duration-500 hover-rotate ${
+      <div className={`bg-gray-800 rounded-lg shadow-md overflow-hidden transition-all duration-500 hover-rotate ${
         isUnavailable ? 'opacity-75 grayscale' : 'hover:shadow-2xl'
       }`}>
         <div className="relative">
@@ -70,25 +70,25 @@ export default function PropertyCard({ property }: PropertyCardProps) {
         <div className="p-3 sm:p-4 space-y-2 sm:space-y-3">
           <div>
             <h3 className={`font-semibold text-base sm:text-lg transition-colors line-clamp-2 ${
-              isUnavailable ? 'text-gray-500' : 'text-gray-800 group-hover:text-blue-600'
+              isUnavailable ? 'text-gray-500' : 'text-gray-100 group-hover:text-blue-400'
             }`}>
               {property.title[language]}
             </h3>
-            <div className="flex items-center text-gray-600 text-xs sm:text-sm mt-1">
+            <div className="flex items-center text-gray-400 text-xs sm:text-sm mt-1">
               <MapPin size={12} className="mr-1 flex-shrink-0" />
               <span className="truncate">{property.location[language]}</span>
             </div>
-            <p className="text-gray-600 text-sm mt-2 line-clamp-2">{property.description[language]}</p>
+            <p className="text-gray-400 text-sm mt-2 line-clamp-2">{property.description[language]}</p>
           </div>
 
           <div className={`text-xl sm:text-2xl font-bold transition-all duration-300 group-hover:scale-105 ${
-            isUnavailable ? 'text-gray-400' : 'text-blue-600 group-hover:text-blue-700'
+            isUnavailable ? 'text-gray-500' : 'text-blue-400 group-hover:text-blue-300'
           }`}>
             {isUnavailable && property.status === 'sold' ? '---' : property.price}
           </div>
 
           {(property.bedrooms || property.bathrooms || property.area) && (
-            <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-xs sm:text-sm text-gray-600 pt-2 border-t border-gray-100">
+            <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-xs sm:text-sm text-gray-400 pt-2 border-t border-gray-700">
               {property.bedrooms && (
                 <div className="flex items-center whitespace-nowrap">
                   <Bed size={12} className="mr-1" />

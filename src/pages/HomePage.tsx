@@ -59,7 +59,7 @@ export default function HomePage() {
       </section>
 
       {/* Quick Links */}
-      <section className="py-12 sm:py-16 bg-white dark:bg-gray-800 transition-colors duration-300">
+      <section className="py-12 sm:py-16 bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4">{t('categories.title')}</h2>

@@ -23,10 +23,9 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 transition-all duration-300 hover:scale-105 group">
-            <img src="/public/images/logo.png" alt="EmlakPlus Logo" className="h-12 w-auto group-hover:animate-pulse" />
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-blue-600">EMLAK</span>
-              <span className="text-lg font-semibold text-yellow-500">PLUS</span>
+              <span className="text-2xl font-bold text-blue-400">EMLAK</span>
+              <span className="text-xl font-semibold text-yellow-400">PLUS</span>
             </div>
           </Link>
 

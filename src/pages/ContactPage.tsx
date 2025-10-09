@@ -9,8 +9,8 @@ export default function ContactPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-800 dark:text-white mb-4">{t('contact.title')}</h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300">
+          <h1 className="text-4xl font-bold text-white mb-4">{t('contact.title')}</h1>
+          <p className="text-xl text-gray-300">
             {t('contact.subtitle')}
           </p>
         </div>
@@ -19,15 +19,15 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8">
             {/* Contact Details */}
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6">
-                     <h2 className="text-xl font-bold text-gray-800 dark:text-white mb-6">{t('contact.contactInfo')}</h2>
+            <div className="bg-gray-800 rounded-lg shadow-sm p-6">
+                     <h2 className="text-xl font-bold text-white mb-6">{t('contact.contactInfo')}</h2>
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-3">
                   <MapPin size={24} className="text-blue-600 mt-1 flex-shrink-0" />
                   <div>
-                           <div className="font-semibold text-gray-800 dark:text-white text-lg">{t('contact.address')}</div>
-                    <div className="text-gray-600 dark:text-gray-300 mt-1">
+                           <div className="font-semibold text-white text-lg">{t('contact.address')}</div>
+                    <div className="text-gray-300 mt-1">
                       Maslak Mahallesi,<br />
                       Büyükdere Caddesi No: 123<br />
                       34398 Şişli/İstanbul
@@ -38,7 +38,7 @@ export default function ContactPage() {
                 <div className="flex items-start space-x-3">
                   <Phone size={24} className="text-blue-600 mt-1 flex-shrink-0" />
                   <div>
-                           <div className="font-semibold text-gray-800 dark:text-white text-lg">{t('contact.phoneNumbers')}</div>
+                           <div className="font-semibold text-white text-lg">{t('contact.phoneNumbers')}</div>
                     <div className="text-gray-600 dark:text-gray-300 mt-1 space-y-1">
                       <div className="text-lg">
                         <a href="tel:+902125550123" className="hover:text-blue-600 transition-colors font-medium">
@@ -59,7 +59,7 @@ export default function ContactPage() {
                 <div className="flex items-start space-x-3">
                   <Mail size={24} className="text-blue-600 mt-1 flex-shrink-0" />
                   <div>
-                    <div className="font-semibold text-gray-800 dark:text-white text-lg">{t('contact.emailAddresses')}</div>
+                    <div className="font-semibold text-white text-lg">{t('contact.emailAddresses')}</div>
                     <div className="text-gray-600 dark:text-gray-300 mt-1 space-y-1">
                       <div className="text-lg">
                         <a href="mailto:info@emlakplus.com" className="hover:text-blue-600 transition-colors font-medium">
@@ -80,8 +80,8 @@ export default function ContactPage() {
                 <div className="flex items-start space-x-3">
                   <Clock size={24} className="text-blue-600 mt-1 flex-shrink-0" />
                   <div>
-                    <div className="font-semibold text-gray-800 dark:text-white text-lg">{t('contact.workingHours')}</div>
-                    <div className="text-gray-600 dark:text-gray-300 mt-1">
+                    <div className="font-semibold text-white text-lg">{t('contact.workingHours')}</div>
+                    <div className="text-gray-300 mt-1">
                       <div>{t('contact.workingDays.weekdays')}: <span className="font-medium">09:00 - 18:00</span></div>
                       <div>{t('contact.workingDays.saturday')}: <span className="font-medium">09:00 - 16:00</span></div>
                       <div>{t('contact.workingDays.sunday')}: <span className="font-medium text-red-600">{t('contact.workingDays.closed')}</span></div>
@@ -92,9 +92,9 @@ export default function ContactPage() {
             </div>
 
             {/* Quick Actions */}
-            <div className="space-y-6 h-full flex flex-col justify-between bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6">
-              <div className="bg-blue-50 dark:bg-blue-900/30 rounded-lg p-6 mb-6">
-                <h3 className="text-lg font-bold text-gray-800 dark:text-white mb-4">{t('contact.quickContact')}</h3>
+            <div className="space-y-6 h-full flex flex-col justify-between bg-gray-800 rounded-lg shadow-sm p-6">
+              <div className="bg-blue-900/30 rounded-lg p-6 mb-6">
+                <h3 className="text-lg font-bold text-white mb-4">{t('contact.quickContact')}</h3>
                 <div className="space-y-3">
                   <a
                     href="tel:+902125550123"
@@ -121,9 +121,9 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="bg-green-50 dark:bg-green-900/30 rounded-lg p-6">
-                <h3 className="text-lg font-bold text-gray-800 dark:text-white mb-4">{t('contact.socialMedia')}</h3>
-                <div className="text-gray-600 dark:text-gray-300">
+              <div className="bg-green-900/30 rounded-lg p-6">
+                <h3 className="text-lg font-bold text-white mb-4">{t('contact.socialMedia')}</h3>
+                <div className="text-gray-300">
                   <p className="mb-2">{t('contact.followUs')}</p>
                   <div className="space-y-2">
                     <div>📘 Facebook: EmlakPlus</div>
@@ -138,7 +138,7 @@ export default function ContactPage() {
 
         {/* Map Section */}
         <div className="mt-12">
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm overflow-hidden">
+          <div className="bg-gray-800 rounded-lg shadow-sm overflow-hidden">
             <div className="h-96">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.8542127282546!2d29.02691321547389!3d41.08757797929764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7650656bd63%3A0x8ca058b28c20b6c3!2sMaslak%2C%20B%C3%BCy%C3%BCkdere%20Cd.%20No%3A123%2C%2034398%20%C5%9Ei%C5%9Fli%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1696234567890!5m2!1str!2str"
@@ -156,35 +156,35 @@ export default function ContactPage() {
 
         {/* FAQ Section */}
         <div className="mt-12">
-          <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-8 text-center">Sıkça Sorulan Sorular</h2>
+          <h2 className="text-2xl font-bold text-white mb-8 text-center">Sıkça Sorulan Sorular</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6">
-              <h3 className="font-semibold text-gray-800 dark:text-white mb-2">İlan verme ücreti var mı?</h3>
-              <p className="text-gray-600 dark:text-gray-300">
+            <div className="bg-gray-800 rounded-lg shadow-sm p-6">
+              <h3 className="font-semibold text-white mb-2">İlan verme ücreti var mı?</h3>
+              <p className="text-gray-300">
                 Bireysel müşterilerimiz için temel ilan verme hizmeti ücretsizdir. 
                 Premium özellikler için farklı paketlerimiz bulunmaktadır.
               </p>
             </div>
             
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6">
-              <h3 className="font-semibold text-gray-800 dark:text-white mb-2">Emlak görüntüleme nasıl planlanır?</h3>
-              <p className="text-gray-600 dark:text-gray-300">
+            <div className="bg-gray-800 rounded-lg shadow-sm p-6">
+              <h3 className="font-semibold text-white mb-2">Emlak görüntüleme nasıl planlanır?</h3>
+              <p className="text-gray-300">
                 İlgilendiğiniz ilanın iletişim bilgilerini kullanarak emlak danışmanımızla 
                 iletişime geçebilir ve görüntüleme randevusu alabilirsiniz.
               </p>
             </div>
             
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6">
-              <h3 className="font-semibold text-gray-800 dark:text-white mb-2">Kredi danışmanlığı hizmeti var mı?</h3>
-              <p className="text-gray-600 dark:text-gray-300">
+            <div className="bg-gray-800 rounded-lg shadow-sm p-6">
+              <h3 className="font-semibold text-white mb-2">Kredi danışmanlığı hizmeti var mı?</h3>
+              <p className="text-gray-300">
                 Evet, deneyimli ekibimiz kredi süreçlerinde size rehberlik eder ve 
                 en uygun finansman seçeneklerini bulmanıza yardımcı olur.
               </p>
             </div>
             
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6">
-              <h3 className="font-semibold text-gray-800 dark:text-white mb-2">Yasal işlemler nasıl yürütülür?</h3>
-              <p className="text-gray-600 dark:text-gray-300">
+            <div className="bg-gray-800 rounded-lg shadow-sm p-6">
+              <h3 className="font-semibold text-white mb-2">Yasal işlemler nasıl yürütülür?</h3>
+              <p className="text-gray-300">
                 Tüm yasal işlemler konusunda uzman hukuk ekibimizle çalışıyoruz. 
                 Alım-satım süreçlerinde güvenliğinizi sağlıyoruz.
               </p>
